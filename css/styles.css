@@ -1,0 +1,65 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
+.footer {
+  background-color: lightpink;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: lightpink;
+  color: floralwhite; }
+  .jumbotron .about p {
+    display: none; }
+
+.address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0F0F0F; }
+
+.body {
+  padding: 50px 0 0 0;
+  z-index: 0; }
+
+.navbar-dark {
+  background-color: #e8445d; }
+
+.tab-content {
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  padding: 10px; }
+
+.carousel .carousel-item {
+  height: 400px; }
+
+.attraction ul {
+  list-style-type: none;
+  padding-left: 2px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+
+#reserveTableModal .modal-header, #loginModal .modal-header {
+  background-color: #e8445d;
+  color: floralwhite; }
+  #reserveTableModal .modal-header .close, #loginModal .modal-header .close {
+    color: floralwhite; }
+
+#reserveTableModal .modal-body, #loginModal .modal-body {
+  background-color: lightpink; }
+
+body {
+  background-color: #fdd4da; }
