@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dilli Dilwalon Ki</title>
+    <link rel="icon" href="img/logo.png" type="img">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.svg" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-map-marker fa-lg"></span> See</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./eat.html"><span class="fa fa-cutlery fa-lg"></span> Eat</a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="loginButton">
+                        <span class="fa fa-female" /> <span class="fa fa-male" /> Connect With A Host
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        We will get back to you with the best hosts
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                        </div>
+                    </div>
+                     <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" name="approve" id="approve" value="" class="form-check-input">
+                                <label class="form-check-label" for="approve">
+                                    <strong>May we contact you?</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control">
+                                <option>Tel.</option>
+                                <option>Email</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Requirements</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Find me my hosts</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="about col-10">
+                    <h1>Dilli Dilwalon Ki -
+                        Orgainizing your Delhi trips since 1990</h1>
+                    <p class="d-md-inline">We take pride in showing around our city. We plan each second of your trip so that you don't have to worry about anything and just need to relax and enjoy. Our speciality is our network of Delhites that we have chosen just for you to live in Delhi like a local. You will come as a guest to these hosts nd leave as lif long friends.</p>
+                </div>
+                <div class="col-2 align-self-center">
+                    <img src="img/logo.svg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-12 col-sm-12">
+                <h2>Famous Attractions</h2>
+                <div id="accordian">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="redforthead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#red-fort">
+                                    Red Fort
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse show" id="red-fort" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/red-fort.jpg" alt="red-fort">
+                                <div class="attraction">
+                                    <p><strong>Red Fort</strong> symbolizes the era of Mughal rule in India. The Fort, <strong>built in 1638</strong>, is a magnificent monument that captivates your attention and exhibits the show of architectural splendor of Mughals. The <strong>33m high walls of Red Fort</strong>&nbsp;are yet another special feature of the fort.</p>
+                                    <ul>
+                                        <li><strong>Famous for:</strong>&nbsp;History, Architecture, Photography.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;Entry fee is 35 INR for Indians and 500 INR for foreigners. Light and Sound will cost about 80 INR for adults and 30 INR for children.</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open Tue to Sun from sunrise to sunset. Light and Sound show at 6pm everyday</li>
+                                        <li><strong>Duration: </strong>1-2 hours.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="qutabhead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#qutab">
+                                    Qutab Minar
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="qutab" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/qutab-minar.jpg" alt="qutab-minar">
+                                <div class="attraction">
+                                    <p><strong>The tallest tower in India</strong>, <strong>Qutab Minar</strong>, is believed to commemorate the victory and the beginning of Mughal era in India. The <strong>73-meter tall tower</strong> was built by <strong>Qutab-ud-din Aibak</strong> after defeating the last Hindu Kingdom. However, some say that it was built to serve as a minaret to call those faithful to prayer. While red sandstone was used in the construction of first three storeys, marble and sandstone were used to construct the last two storeys. India’s first ever mosque, Quwwat-ul-Islam is at the foot of Qutab Minar.</p>
+                                    <ul>
+                                        <li><strong>Famous for:</strong>&nbsp;History, Architecture, Photography.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;30 INR for Indians and 500 INR for foreigners..</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open all days from sunrise till sunset.</li>
+                                        <li><strong>Duration:&nbsp;</strong>30 mins.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="lotushead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#lotus">
+                                    Lotus Temple
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="lotus" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/lotus-temple.jpg" alt="lotus-temple">
+                                <div class="attraction">
+                                    <p><strong>Bahai Temple is famously known as Lotus Temple</strong> owing to its resemblance to lotus flower. Lotus symbolizes four religions namely Hinduism, Islam, Buddhism and Jainism. Out of the seven major <a href="http://www.transindiatravels.com/bahai-temples.html">Bahai temples constructed around the world</a>, the one in Delhi was constructed last. The place is serene and is open for prayers and meditation by people who follow any religion. The nine pools of water around the petals is a sight to watch at dusk.</p>
+                                    <ul>
+                                        <li><strong>Famous for:</strong>&nbsp;Religion, Architecture.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;Free.</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open all days from Tue to Sun (9am to 5:30pm).</li>
+                                        <li><strong>Duration: </strong>1.5 hours.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="lodhihead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#lodhi">
+                                    Lodhi Garden
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="lodhi" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/lodhi-garden.jpg" alt="lodhi-garden">
+                                <div class="attraction">
+                                    <ul>
+                                        <p>If you want to have a quiet day to escape the crowd and the busy life, this is where you need to be in Delhi. <strong>Lodi Gardens was built in 1936 by British</strong> around the tombs of the rulers of 15th and 16th centuries. The <strong>90-acre Garden</strong> is an excellent <a href="http://www.transindiatravels.com/delhi/fun-places-to-hang-out-with-friends-in-delhi/" target="_blank" rel="noopener noreferrer">place to relax, walk, jog and enjoy</a> the beauty of nature. The National Bonsai Park situated in the Gardens is yet another attraction.</p>
+                                        <li><strong>Famous for:</strong>&nbsp;History, Monuments, Gardens, Photography.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;No fee.</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open all days from sunrise to sunset.</li>
+                                        <li><strong>Duration: </strong>45 mins.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="indiagatehead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#indiagate">
+                                    India Gate
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="indiagate" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/india-gate.jpg" alt="india-gate">
+                                <div class="attraction">
+                                    <p><strong>India Gate</strong> was constructed in the year 1931 as a war memorial for over 70,000 soldiers killed during First World War and Afghan War. The names of the soldiers are inscribed in the walls of India Gate. It was earlier known as <strong>“All India War Memorial”</strong>. Situated on Rajpath, India Gate looks stunning in the evening lights.</p>
+                                    <ul>
+                                        <li><strong>Famous for:</strong>&nbsp;War memorial, Architecture, Indian Army.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;Free.</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open all days.</li>
+                                        <li><strong>Duration: </strong>1-2 hours.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="humayunshead">
+                            <h3 class="mb-0">
+                                <a data-toggle="collapse" data-target="#humayuns">
+                                    Humayuns Tomb
+                                </a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="humayuns" data-parent="#accordian">
+                            <div class="card-body">
+                                <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last"
+                                    src="img/carousel-images/humayuns-tomb.jpg" alt="humayuns-tomb">
+                                <div class="attraction">
+                                    <p>Built in the<strong> year 1570, Humayun’s Tomb</strong> is a monument built by Queen Haji Begum, widow of Humayun. The monument displays the inspiration of Persian architecture. The world famous Taj Mahal bears resemblance to this monument constructed during early Mughal rule in India. It is <strong>open on all days for visits</strong>. The best time to view Humayun’s Tomb would be in the late afternoon.</p>
+                                    <ul>
+                                        <li><strong>Famous for:</strong>&nbsp;History, Architecture, Gardens, Photography.</li>
+                                        <li><strong>Tickets:</strong>&nbsp;30 INR for adults and 500 INR for foreigners.</li>
+                                        <li><strong>Opening Timings:&nbsp;</strong>Open all days.</li>
+                                        <li><strong>Duration:&nbsp;</strong>45 mins.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-11 col-sm-7">
+                    <h5>Our Address</h5>
+                    <address class="address">
+		              15, Cannaught Place, New Delhi<br>
+		              <i class="fa fa-phone fa-lg"></i>: +91 9845673654<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:dilli@gmail.com">dilli@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2019 Dilli travels</p>
+                    <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#mycarousel').carousel({interval: 3000});
+            $('#carouselButton').click(function() {
+                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+                    $('#mycarousel').carousel('pause');
+                    $('#carouselButton').children('span').removeClass('fa-pause');
+                    $('#carouselButton').children('span').addClass('fa-play');
+                }
+                else if ($('#carouselButton').children('span').hasClass('fa-play')) {
+                    $('#mycarousel').carousel('cycle');
+                    $('#carouselButton').children('span').removeClass('fa-play');
+                    $('#carouselButton').children('span').addClass('fa-pause');
+                }
+            });
+            $('#loginButton').click(function() {
+                $('#loginModal').modal('show')
+            });
+
+        });
+    </script>
+</body>
+</html>
